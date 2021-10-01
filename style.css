@@ -29,7 +29,7 @@ font-family: 'Josefin Sans', sans-serif;
 
 */
 body{
-    background: linear-gradient(hsl(0, 0%, 100%), rgb(240, 146, 146));
+    background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     height: 100vh;
 }
 #container{
@@ -86,4 +86,15 @@ input::placeholder {
     color: hsl(0, 36%, 70%);
     font-family: 'Josefin Sans', sans-serif;
     
+}
+
+#custonBtn{
+    position: fixed;
+    right: 2rem;
+    width: 4rem;
+    height: 3rem;
+    border: none;
+    /* box-shadow: 2px 2px 10px; */
+    border-radius: 5rem;
+    background-image: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
