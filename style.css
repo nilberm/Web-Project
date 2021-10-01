@@ -1,0 +1,89 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+
+### Primary
+
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%) 
+
+### Neutral
+
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+
+#### Fonts
+
+font-family: 'Josefin Sans', sans-serif;
+
+*/
+body{
+    background: linear-gradient(hsl(0, 0%, 100%), rgb(240, 146, 146));
+    height: 100vh;
+}
+#container{
+    overflow: auto;
+}
+
+#logo{
+    padding: 2rem;
+}
+
+#foto img{
+    width: 100vw;
+}
+
+#text{
+    margin: auto;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#text h1{
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 3rem 0;
+    letter-spacing: 0.75rem;
+}
+#text h1 span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+#text p{
+    color: hsl(0, 36%, 70%);
+    margin: 1.5rem;
+    line-height: 1.5rem;
+}
+form{
+    margin: auto;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#email{
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 5rem;
+    height: 3rem;
+    width: 18rem;
+    background-color: transparent;
+    padding: 1.2rem;
+    color: hsl(0, 36%, 70%);
+}
+
+input::placeholder {
+    color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
