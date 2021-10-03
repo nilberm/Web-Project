@@ -30,10 +30,11 @@ font-family: 'Josefin Sans', sans-serif;
 */
 body{
     background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-    height: 100vh;
+    
 }
 #container{
     overflow: auto;
+    height: 100vh;
 }
 
 #logo{
@@ -42,6 +43,10 @@ body{
 
 #foto img{
     width: 100vw;
+}
+
+#foto .imgDesktop{
+    display: none;
 }
 
 #text{
@@ -68,7 +73,6 @@ body{
     line-height: 1.5rem;
 }
 form{
-    margin: auto;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 1rem;
@@ -83,6 +87,8 @@ form{
     color: hsl(0, 36%, 70%);
     border-color:hsl(0, 80%, 86%);
     outline: 0;
+    position: relative;
+    right: -2rem;
 }
 
 input::placeholder {
@@ -92,8 +98,9 @@ input::placeholder {
 }
 
 #custonBtn{
-    position: fixed;
+    position: relative;
     right: 2rem;
+    bottom: -.25rem;
     width: 4rem;
     height: 3rem;
     border: none;
@@ -108,6 +115,8 @@ input::placeholder {
     font-size: .8rem;
     padding-left: 3rem;
     display: none;
+    position: relative;
+    right: 2rem;
 }
 
 #error p{
@@ -121,4 +130,33 @@ input::placeholder {
     position: relative;
     right: -0.5rem;
     top: -0.2rem;
+}
+
+
+@media (min-width: 1440px){
+    #container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        background-image: url(images/bg-pattern-desktop.svg);
+    }
+    #logo{
+        margin: 2rem;
+    }
+    #logo img{
+        width: 15rem;
+    }
+    #foto img{
+        background-image: url(images/);
+        /* position: absolute;
+        right: 0rem; */
+    }
+    #foto .imgMobile{
+        display: none;
+    }
+    #foto .imgDesktop{
+        display: inline-block;
+        width: 50vw;
+    }
+    #text{}
 }

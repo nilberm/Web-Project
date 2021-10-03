@@ -21,24 +21,29 @@
       <img src="images/logo.svg" alt="">
     </div>
     <div id="foto">
-      <img src="images/hero-mobile.jpg" alt="">
+      <img class="imgMobile" src="images/hero-mobile.jpg" alt="">
+      <img class="imgDesktop" src="images/hero-desktop.jpg" alt="">
     </div>
     <div id="text">
       <h1><span>We're</span> coming soon</h1>
-      <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>      
+      <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <form action="">
+        <input type="email" id="email" name="email" placeholder="Email Address" onblur="validationEmail()" maxlength="60" size="65" onfocus="redefinirMsg()">
+        <input type="button" value="enviar" hidden>
+        <button id="custonBtn"><img src="images/icon-arrow.svg" alt=""></button>
+      </form>
+      <div id="error">
+        <img src="images/icon-error.svg" alt="error">
+        <p>O E-mail digitado não é válido!</p>
+      </div>
     </div>
-    <form action="">
-      <input type="email" id="email" name="email" placeholder="Email Address" onblur="validationEmail()" maxlength="60" size="65" onfocus="redefinirMsg()">
-      <input type="button" value="enviar" hidden>
-      <button id="custonBtn"><img src="images/icon-arrow.svg" alt=""></button>
-    </form>
+    
     <div id="error">
       <img src="images/icon-error.svg" alt="error">
       <p>O E-mail digitado não é válido!</p>
     </div>
 
-  </div>
-  
+  </div>  
 
   <script src="script.js"></script>
 </body>
