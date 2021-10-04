@@ -9,3 +9,10 @@ Mobile Version
 
 ![image](https://user-images.githubusercontent.com/83287176/135860378-7901e4c9-3f14-43f1-b95c-01701eee7971.png)
 
+
+
+
+In this project, I learn how to validate the e-mail with JavaScript, and also helped me to remember some things about CSS that I had forgotten :D
+
+You can see the web page in this link https://capture-email-page.netlify.app/
+
