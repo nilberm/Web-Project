@@ -134,22 +134,38 @@ input::placeholder {
 
 
 @media (min-width: 1440px){
+    body{
+        height: 10rem;
+    }
     #container{
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
         background-image: url(images/bg-pattern-desktop.svg);
+        grid-template-areas: 'a1 a2'
+                             'a3 a2'
+                             'a3 a2'
+                             'a3 a2'
+                             'a3 a2'
+                             'a3 a2';
+        
     }
     #logo{
         margin: 2rem;
     }
     #logo img{
-        width: 15rem;
+        width: 12rem;
+        grid-area: a1;
+        position: relative;
+        top: 2rem;
+        right: -5rem;
     }
-    #foto img{
-        background-image: url(images/);
-        /* position: absolute;
-        right: 0rem; */
+    #desktopDesign{
+        display: flex;
+        justify-content: space-between;
+    }
+    #foto{
+        grid-area: a2;
     }
     #foto .imgMobile{
         display: none;
@@ -158,5 +174,35 @@ input::placeholder {
         display: inline-block;
         width: 50vw;
     }
-    #text{}
+    #text{
+        grid-area: a3;
+        margin-top: 0;
+    }
+    #text h1{
+        font-size: 5rem;
+        margin-left: 9rem;
+        text-align: left;
+    }
+    #text p{
+        font-size: 1.2rem;
+        margin-left: 9rem;
+        margin-right: 9rem;
+        text-align: left;
+        line-height: 2rem;
+    }
+    #email{
+        width: 30rem;
+        height: 4rem;
+        font-size: 1rem;
+        padding-left: 2rem;
+    }
+    #custonBtn{
+        height: 4rem;
+        width: 7rem;
+        right: 4rem;
+        bottom: -.2rem;
+    }
+    #error img{
+        right: -10em;
+    }
 }
