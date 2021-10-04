@@ -8,6 +8,8 @@ Desktop Version
 Mobile Version
 
 ![image](https://user-images.githubusercontent.com/83287176/135860378-7901e4c9-3f14-43f1-b95c-01701eee7971.png)
+![image](https://user-images.githubusercontent.com/83287176/135861361-309fbf47-7c63-4ea4-819b-9632f93156f3.png)
+
 
 
 
